@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/countTitle"
+        android:text="@string/count_title"
+        android:textSize="30dp"
+        android:textColor="@color/yellow"
+        android:gravity="center"
+        android:background="@color/peru"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inoutLinear"
+        android:layout_below="@+id/countTitle">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/inBtn"
+            android:text="@string/count_in"
+            android:textSize="20dp"
+            android:textColor="@color/red"
+            android:background="@color/white"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/outBtn"
+            android:text="@string/count_out"
+            android:textSize="20dp"
+            android:textColor="@color/green"
+            android:background="@color/white"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/exampleTxt"
+        android:textSize="30dp"
+        android:textColor="@color/gray"
+        android:background="@color/white"
+        android:layout_below="@+id/inoutLinear"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/moneyTitle"
+        android:text="@string/count_money"
+        android:textSize="30dp"
+        android:textColor="@color/grey"
+        android:background="@color/white"
+        android:layout_below="@+id/exampleTxt"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/moneyTxt"
+        android:textSize="30dp"
+        android:textColor="@color/green"
+        android:background="@color/white"
+        android:selectAllOnFocus="true"
+        android:layout_below="@+id/exampleTxt"
+        android:layout_toRightOf="@+id/moneyTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeTitle"
+        android:text="@string/count_time"
+        android:textSize="30dp"
+        android:textColor="@color/grey"
+        android:background="@color/white"
+        android:layout_below="@+id/moneyTitle"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:id="@+id/timeTxt"
+        android:textSize="30dp"
+        android:textColor="@color/gray"
+        android:background="@color/white"
+        android:selectAllOnFocus="true"
+        android:layout_below="@+id/moneyTxt"
+        android:layout_toRightOf="@+id/timeTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressTitle"
+        android:text="@string/count_address"
+        android:textSize="30dp"
+        android:textColor="@color/grey"
+        android:background="@color/white"
+        android:layout_below="@+id/timeTitle"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressTxt"
+        android:textSize="30dp"
+        android:textColor="@color/gray"
+        android:background="@color/white"
+        android:selectAllOnFocus="true"
+        android:layout_below="@+id/timeTxt"
+        android:layout_toRightOf="@+id/addressTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/textTitle"
+        android:text="@string/count_text"
+        android:textColor="@color/gray"
+        android:textSize="30dp"
+        android:background="@color/white"
+        android:layout_above="@+id/recordTime"
+        android:layout_below="@+id/addressTxt"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/textTxt"
+        android:textSize="30dp"
+        android:textColor="@color/gray"
+        android:gravity="top|left"
+        android:background="@color/white"
+        android:selectAllOnFocus="true"
+        android:layout_below="@+id/addressTxt"
+        android:layout_above="@id/recordTime"
+        android:layout_toRightOf="@+id/addressTitle"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recordTime"
+        android:text="@string/record_time"
+        android:textColor="@color/gray"
+        android:textSize="30dp"
+        android:background="@color/white"
+        android:layout_above="@+id/recordTimeTxt"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recordTimeTxt"
+        android:textColor="@color/gray"
+        android:textSize="30dp"
+        android:background="@color/white"
+        android:layout_above="@+id/barBtn"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/barBtn"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveBtn"
+            android:text="@string/saveBtn"
+            android:textSize="20dp"
+            android:textColor="@color/yellow"
+            android:background="@drawable/button_press"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/moreBtn"
+            android:text="@string/more_count"
+            android:textSize="20dp"
+            android:textColor="@color/yellow"
+            android:background="@drawable/button_press"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/deleteBtn"
+        android:background="@mipmap/trash_delete"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

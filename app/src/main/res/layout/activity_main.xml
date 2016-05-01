@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="ssm.countup.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/welcomeTitle"
+        android:textSize="30dp"
+        android:textColor="@color/yellow"
+        android:background="@color/peru"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/inoutViewPage"
+        android:layout_below="@+id/welcomeTitle"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewpageGroup"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_above="@+id/newCountBtn">
+
+        <RadioButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/viewpageSel1"
+            android:button="@drawable/radio_press"/>
+
+        <RadioButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/viewpageSel2"
+            android:button="@drawable/radio_press"/>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newCountBtn"
+        android:text="@string/new_count"
+        android:textSize="30dp"
+        android:textColor="@color/yellow"
+        android:background="@drawable/button_press"
+        android:layout_below="@+id/inoutViewPage"
+        android:layout_toLeftOf="@+id/searchItemBtn"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchItemBtn"
+        android:text="@string/search_Item"
+        android:textColor="@color/yellow"
+        android:textSize="20dp"
+        android:background="@drawable/button_press"
+        android:layout_below="@+id/inoutViewPage"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recentCountTitle"
+        android:text="@string/recent_count"
+        android:textSize="20dp"
+        android:textColor="@color/indigo"
+        android:background="@color/papayawhip"
+        android:layout_below="@+id/newCountBtn"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inoutTitle"
+        android:text="@string/count_in"
+        android:textSize="20dp"
+        android:textColor="@color/grey"
+        android:layout_below="@+id/searchItemBtn"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/moneyTitle"
+        android:text="@string/count_money"
+        android:textSize="30dp"
+        android:textColor="@color/grey"
+        android:background="@color/white"
+        android:layout_below="@+id/recentCountTitle"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/moneyInput"
+        android:textSize="30dp"
+        android:textColor="@color/grey"
+        android:background="@color/white"
+        android:layout_toRightOf="@+id/moneyTitle"
+        android:layout_below="@+id/recentCountTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeTitle"
+        android:text="@string/count_time"
+        android:textSize="30dp"
+        android:textColor="@color/grey"
+        android:background="@color/white"
+        android:layout_below="@+id/moneyTitle"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeInput"
+        android:textSize="30dp"
+        android:textColor="@color/grey"
+        android:background="@color/white"
+        android:layout_toRightOf="@+id/timeTitle"
+        android:layout_below="@+id/moneyInput"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressTitle"
+        android:text="@string/count_address"
+        android:textSize="30dp"
+        android:textColor="@color/grey"
+        android:background="@color/white"
+        android:layout_below="@+id/timeTitle"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressInput"
+        android:textSize="30dp"
+        android:textColor="@color/grey"
+        android:background="@color/white"
+        android:layout_toRightOf="@+id/addressTitle"
+        android:layout_below="@+id/timeInput"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/textTitle"
+        android:text="@string/count_text"
+        android:textSize="30dp"
+        android:textColor="@color/grey"
+        android:background="@color/white"
+        android:layout_below="@+id/addressTitle"
+        android:layout_above="@+id/recentInput"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/textInput"
+        android:textSize="30dp"
+        android:textColor="@color/grey"
+        android:background="@color/white"
+        android:layout_toRightOf="@+id/textTitle"
+        android:layout_below="@+id/addressInput"
+        android:layout_above="@+id/recentInput"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recentInput"
+        android:textSize="30dp"
+        android:textColor="@color/grey"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/startView"
+        android:src="@color/peru"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/startTxt"
+        android:text="@string/welcome_txt"
+        android:textSize="40dp"
+        android:textColor="@color/yellow"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:layout_below="@+id/addressInput"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

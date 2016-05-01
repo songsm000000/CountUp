@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/itmeTitle"
+        android:background="@color/peru">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastYearBtn"
+            android:text="@string/last_year"
+            android:textColor="@color/yellow"
+            android:textSize="20dp"
+            android:background="@drawable/button_press"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/yearTitle"
+            android:textColor="@color/yellow"
+            android:textSize="35dp"
+            android:gravity="center"
+            android:background="@color/peru"
+            android:layout_toRightOf="@+id/lastYearBtn"
+            android:layout_toLeftOf="@+id/nextYearBtn"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/selYear"
+            android:layout_toRightOf="@+id/lastYearBtn"
+            android:layout_toLeftOf="@+id/nextYearBtn"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nextYearBtn"
+            android:text="@string/next_year"
+            android:textColor="@color/yellow"
+            android:textSize="20dp"
+            android:background="@drawable/button_press"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemListView"
+        android:layout_below="@+id/itmeTitle"/>
+
+</RelativeLayout>

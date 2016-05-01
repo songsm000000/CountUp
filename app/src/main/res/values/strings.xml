@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">我的账本</string>
+    <string name="saveBtn">保存</string>
+    <string name="welcome">欢迎使用我的账本！</string>
+    <string name="welcome_txt">我 的 账 本\n你 的 选 择</string>
+    <string name="new_count">记一笔</string>
+    <string name="search_Item">查流水</string>
+    <string name="recent_count">最近的记账</string>
+    <string name="count_in">收入</string>
+    <string name="count_out">支出</string>
+    <string name="count_money">金额：</string>
+    <string name="count_time">日期：</string>
+    <string name="count_address">地点：</string>
+    <string name="count_text">内容：</string>
+    <string name="more_count">再记一笔</string>
+    <string name="example">输入例：</string>
+    <string name="record_time">记账时间：</string>
+    <string name="last_year">上一年</string>
+    <string name="next_year">下一年</string>
+    <string name="count_title">记录你的收支情况</string>
+
+</resources>
